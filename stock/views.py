@@ -1,9 +1,16 @@
 from django.shortcuts import render
+from .models import Item
 
 # Create your views here.
 
 
-def index(request):
-    """ A view to return the index page """
+def all_items(request):
+    """ A view to show all items, including sorting and search queries """
+
+    items = Item.objects.all()
+
+    context = {
+        'items': items,
+    }
     
-    return render(request, 'home/index.html')
+    return render(request, 'stock/items.html', context)
