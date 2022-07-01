@@ -32,7 +32,7 @@
                                 </a>
                                 {% elif item.video %}
                                 <a href="{% url 'item_detail' item.id %}">
-                                    <video class="card-img-top img-fluid" src="{{ item.video.url }}" alt="{{ item.name }}" autoplay loop muted></video>
+                                    <video class="card-img-top img-fluid" src="{{ item.video.url }}" alt="{{ item.name }}"></video>
                                 </a>
                                 {% else %}
                                 <a href="{% url 'item_detail' item.id %}">

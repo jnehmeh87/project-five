@@ -25,13 +25,13 @@
                 <div class="row">
                     <div class="col-12 colmd-6 col-lg-4 offset-lg-2">
                         <div class="image-container my-5">
-                            {% if item.image %}
-                            <a href="{{ item.image.url }}" target="_blank">
-                                <img class="card-img-top img-fluid" src="{{ item.image.url }}" alt="{{ item.name }}">
-                            </a>
-                            {% elif item.video %}
+                            {% if item.video %}
                             <a href="{{ item.video.url }}" target="_blank">
                                 <video class="card-img-top img-fluid" src="{{ item.video.url }}" alt="{{ item.name }}" autoplay loop muted></video>
+                            </a>
+                            {% elif item.image %}
+                            <a href="{{ item.image.url }}" target="_blank">
+                                <img class="card-img-top img-fluid" src="{{ item.image.url }}" alt="{{ item.name }}">
                             </a>
                             {% else %}
                             <a href="">
