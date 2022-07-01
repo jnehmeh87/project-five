@@ -13,4 +13,4 @@ def all_items(request):
         'items': items,
     }
     
-    return render(request, 'stock/items.html', context)
+    return render(request, 'items/items.html', context)
