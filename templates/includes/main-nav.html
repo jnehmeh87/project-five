@@ -5,8 +5,7 @@
                 All Items
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-items-link">
-                <a href="{% url 'items' %}?sort=price_hd&direction=asc" class="dropdown-item">By Lower Prices</a>
-                <a href="{% url 'items' %}?sort=price_hd&direction=desc" class="dropdown-item">By Higher Prices</a>
+                <a href="{% url 'items' %}?sort=price_hd&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'items' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
                 <a href="{% url 'items' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'items' %}?sort=location&direction=asc" class="dropdown-item">By Location</a>
@@ -26,7 +25,7 @@
                 <a href="{% url 'items' %}?category=aerial" class="dropdown-item">Aerial</a>
                 <a href="{% url 'items' %}?category=timelapse" class="dropdown-item">Timelapse</a>
                 <a href="{% url 'items' %}?category=slowmo" class="dropdown-item">Slow-mo</a>
-                <a href="{% url 'items' %}?category=video,aerial,timelapse,slowmo" class="dropdown-item">All Items</a>
+                <a href="{% url 'items' %}?category=video,aerial,timelapse,slowmo" class="dropdown-item">All Videos</a>
             </div>
         </li>
     </ul>
@@ -39,6 +38,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'items' %}?category=photos" class="dropdown-item">All Photos</a>
+                <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
             </div>
         </li>
     </ul>

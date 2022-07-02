@@ -51,6 +51,13 @@
                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></p>
                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></p>
                             {% endif %}
+                            {% if item.category %}
+                            <p class="small mt-1 mb-0">
+                                <a href="{% url 'items' %}?category={{ item.category.name }}" class="text-muted">
+                                    <i class="fas fa-tag mr-1"></i>{{ item.category.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
                             {% if item.rating %}
                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ item.rating }} / 5</small>
                             {% else %}
