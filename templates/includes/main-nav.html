@@ -5,10 +5,11 @@
                 All Items
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-items-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">By Location</a>
+                <a href="{% url 'items' %}?sort=price_hd&direction=asc" class="dropdown-item">By Lower Prices</a>
+                <a href="{% url 'items' %}?sort=price_hd&direction=desc" class="dropdown-item">By Higher Prices</a>
+                <a href="{% url 'items' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'items' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'items' %}?sort=location&direction=asc" class="dropdown-item">By Location</a>
                 <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
             </div>
         </li>

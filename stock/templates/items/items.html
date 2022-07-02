@@ -45,7 +45,9 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            {% if item.price %}
+                                            {% if item.price_hd %}
+                                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}</p>
+                                            {% elif item.price %}
                                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price }}</p>
                                             {% else %}
                                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></p>
