@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-4t0zyy09v)436k1+fyb211&n^xbo7pn+3=@e9@b)bnro29$nt@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -108,12 +108,17 @@ WSGI_APPLICATION = 'ader_films.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASES_URL'))
     }
-}
+else
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
