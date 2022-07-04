@@ -1,1 +1,1 @@
-web: gunicorn ader-films.wsgi:application
+web: gunicorn ader_films.wsgi:application
