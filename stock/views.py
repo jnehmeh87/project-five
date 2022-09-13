@@ -19,7 +19,7 @@ def all_items(request):
     if request .GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
-            sor = sortkey
+            sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 items = items.annotate(lower_name=Lower('name'))
@@ -39,7 +39,7 @@ def all_items(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                message.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('items'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
@@ -53,7 +53,7 @@ def all_items(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
-    
+
     return render(request, 'items/items.html', context)
 
 def item_detail(request, item_id):
@@ -64,5 +64,5 @@ def item_detail(request, item_id):
     context = {
         'item': item,
     }
-    
+
     return render(request, 'items/item_detail.html', context)

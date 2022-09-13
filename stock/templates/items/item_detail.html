@@ -45,9 +45,16 @@
                             <p class="mb-0">{{ item.name }}</p>
                             <p class="mb-0">{{ item.location }}</p>
                             {% if item.price_2k %}
-                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></p>
+                            <p>
+                                <select name="prices" id="price-selector">
+                                    <option value="price_hd">${{ item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></option>
+                                    <option value="price_2k">${{ item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></option>
+                                    <option value="price_4k">${{ item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></option>
+                                </select>
+                            </p>
+                            <!-- <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></p>
                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></p>
-                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></p>
+                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></p> -->
                             {% else %}
                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price }}</p>
                             {% endif %}
