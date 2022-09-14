@@ -46,7 +46,14 @@
                                         <p class="my-0 small text-muted">SKU: {{ item.item.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.item.price }}</p>
+                                        <!-- <p class="my-0">${{ item.item.price }}</p> -->
+                                        <p class="my-0">
+                                            <select name="prices" id="price-selector">
+                                                <option value="price_hd">${{ item.item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></option>
+                                                <option value="price_2k">${{ item.item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></option>
+                                                <option value="price_4k">${{ item.item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></option>
+                                            </select>
+                                        </p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="form update-form" action="" method="POST">
