@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -25,18 +26,19 @@
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless">
+                        <table class="table table-sm table-borderless" id="myTable">
                             <thead class="text-black">
                                 <tr>
                                     <th scope="col">Item Info</th>
                                     <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Remove</th>
+                                    <th scope="col" class="float-right">Price</th>
+                                    <!-- <th scope="col">Subtotal</th> -->
                                 </tr>
                             </thead>
 
-                            {% for item in bag_items %}
+                            <tbody>
+                                {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
                                         <img class="img-fluid rounded" src="{{ item.item.image.url }}">
@@ -46,43 +48,30 @@
                                         <p class="my-0 small text-muted">SKU: {{ item.item.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <!-- <p class="my-0">${{ item.item.price }}</p> -->
-                                        <p class="my-0">
-                                            <select name="prices" id="price-selector">
-                                                <option value="price_hd">${{ item.item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></option>
-                                                <option value="price_2k">${{ item.item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></option>
-                                                <option value="price_4k">${{ item.item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></option>
-                                            </select>
-                                        </p>
+                                        <a href="" class="remove-item text-danger" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form class="form update-form" action="" method="POST">
-                                            {% csrf_token %}
-                                            <div class="form-row">
-                                                <div class="col-12">
-                                                    <div class="form-group w-50">
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                            <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" 
-                                                                max="1" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        </form>
-                                        <a href="" class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.item.price }}</p>
+                                        {% if item.item.video %}
+                                        <p class="my-0 price-box float-right">
+                                            <select name="prices" id="price-selector">
+                                                <option value="price_hd" selected>${{ item.item.price_hd }}<span class="mb-0 text-right font-weight-light">    |    HD</span></option>
+                                                <option value="price_2k">${{ item.item.price_2k }}<span class="mb-0 text-right font-weight-light">    |   2K</span></option>
+                                                <option value="price_4k">${{ item.item.price_4k }}<span class="mb-0 text-right font-weight-light">    |    4K</span></option>
+                                            </select>
+                                        </p>
+                                        {% else %}
+                                        <p class="my-0 float-right">${{ item.item.price }}</p>
+                                        {% endif %}
                                     </td>
                                 </tr>
-                            {% endfor %}
-                            <tr>
-                                <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
-                                </td>
-                            </tr>
+                                {% endfor %}
+                                <tr>
+                                    <td colspan="5" class="pt-5 text-right">
+                                        <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                                        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    </td>
+                                </tr>
+                            </tbody>
                             <tr>
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'items' %}" class="btn btn-outline-black rounded-0 btn-lg">
