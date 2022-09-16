@@ -35,7 +35,6 @@ def remove_from_bag(request, item_id):
         bag = request.session.get('bag', {})
 
         bag.pop(item_id)
-
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
