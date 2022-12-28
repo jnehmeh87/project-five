@@ -52,14 +52,6 @@
                                     </td>
                                     <td class="py-3 w-25">
                                         {% if item.item.video %}
-                                        <p class="my-0 price-box float-right">
-                                            <select name="prices" id="price-selector">
-                                                <option value="price_hd" selected>${{ item.item.price_hd }}<span class="mb-0 text-right font-weight-light">    |    HD</span></option>
-                                                <option value="price_2k">${{ item.item.price_2k }}<span class="mb-0 text-right font-weight-light">    |   2K</span></option>
-                                                <option value="price_4k">${{ item.item.price_4k }}<span class="mb-0 text-right font-weight-light">    |    4K</span></option>
-                                            </select>
-                                        </p>
-                                        {% else %}
                                         <p class="my-0 float-right">${{ item.item.price }}</p>
                                         {% endif %}
                                     </td>

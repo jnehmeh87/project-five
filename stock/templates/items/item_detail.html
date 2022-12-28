@@ -44,11 +44,7 @@
                         <div class="item-details-container mb-5 mt-md-5">
                             <p class="mb-0">{{ item.name }}</p>
                             <p class="mb-0">{{ item.location }}</p>
-                            {% if item.price_2k %}
-                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></p>
-                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></p>
-                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></p>
-                            {% else %}
+                            {% if item.price %}
                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price }}</p>
                             {% endif %}
                             {% if item.category %}

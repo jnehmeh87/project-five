@@ -74,14 +74,8 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            {% if item.price_hd %}
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}</p>
-                                            {% elif item.price %}
+                                            {% if item.price %}
                                             <p class="lead mb-0 text-left font-weight-bold">${{ item.price }}</p>
-                                            {% else %}
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_hd }}<span class="mb-0 text-right font-weight-light">  |  HD</span></p>
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_2k }}<span class="mb-0 text-right font-weight-light">  |  2K</span></p>
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ item.price_4k }}<span class="mb-0 text-right font-weight-light">  |  4K</span></p>
                                             {% endif %}
                                             {% if item.category %}
                                             <p class="small mt-1 mb-0">
