@@ -41,7 +41,11 @@
                                 {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
-                                        <img class="img-fluid rounded" src="{{ item.item.image.url }}">
+                                        {% if item.item.video %}
+                                        <video class="card-img-top img-fluid" src="{{ item.item.video.url }}" alt="{{ item.name }}" autoplay loop muted>
+                                        {% else %}
+                                        <img class="card-img-top img-fluid" src="{{ item.item.image.url }}" alt="{{ item.name }}">
+                                        {% endif %}
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.item.name }}</strong></p>
@@ -51,7 +55,7 @@
                                         <a href="" class="remove-item text-danger" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <p class="my-0 float-right">${{ item.item.price }}</p>
+                                        <p class="my-0 float-right">${{ item.item.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                                 {% endfor %}
