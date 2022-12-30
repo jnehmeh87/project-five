@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'home',
     'stock',
     'bag',
+    'checkout',
 
     # Other
     'storages',
