@@ -70,7 +70,16 @@ def item_detail(request, item_id):
 
 def add_item(request):
     """ Add a product to the store """
-    form = ItemForm()
+    if request.method == 'POST':
+        form = ItemForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added Item!')
+            return redirect(reverse('add_item'))
+        else:
+            messages.error(request, 'Failed to add item. Please ensure the form is valid.')
+    else:
+        form = ItemForm()
     template = 'items/add_item.html'
     context = {
         'form': form,

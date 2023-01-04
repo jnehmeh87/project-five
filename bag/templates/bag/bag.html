@@ -42,9 +42,11 @@
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% if item.item.video %}
-                                        <video class="card-img-top img-fluid" src="{{ item.item.video.url }}" alt="{{ item.name }}" autoplay loop muted>
+                                        <video class="img-fluid rounded" src="{{ item.item.video.url }}" alt="{{ item.item.name }}" autoplay loop muted>
+                                        {% elif item.item.image %}
+                                        <img class="img-fluid rounded" src="{{ item.item.image.url }}" alt="{{ item..item.name }}">
                                         {% else %}
-                                        <img class="card-img-top img-fluid" src="{{ item.item.image.url }}" alt="{{ item.name }}">
+                                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.item.name }}">
                                         {% endif %}
                                     </td>
                                     <td class="py-3">
