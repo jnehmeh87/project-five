@@ -1,12 +1,8 @@
-import json
-
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-
-import stripe
 
 from stock.models import Item
 from profiles.models import UserProfile
@@ -14,6 +10,9 @@ from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
+import stripe
+import json
 
 
 @require_POST
@@ -51,6 +50,7 @@ def checkout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
+
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
@@ -99,6 +99,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
+        # Attempt to prefill the form with any info the user maintains
+        # in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
