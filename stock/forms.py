@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomClearableImageInput, CustomClearableVideoInput
 from .models import Item, Category
 
 
@@ -7,6 +8,9 @@ class ItemForm(forms.ModelForm):
     class Meta:
         model = Item
         fields = '__all__'
+
+    image = forms.ImageField(label='Image', required=False, widget=CustomClearableImageInput)
+    video = forms.FileField(label='Video', required=False, widget=CustomClearableVideoInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
