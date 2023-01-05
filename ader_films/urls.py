@@ -30,4 +30,4 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-handler404 = 'ader-films.views.handler404'
+handler404 = 'ader_films.views.handler404'
