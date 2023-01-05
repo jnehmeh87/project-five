@@ -121,10 +121,12 @@ WSGI_APPLICATION = 'ader_films.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
+    print('postgres')
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
+    print('sqlite')
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
