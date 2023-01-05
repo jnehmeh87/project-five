@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ader-films.herokuapp.com/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/bag/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?sort=location&amp;direction=asc</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=videos</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=aerial</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=timelapse</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=slowmo</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=videos,aerial,timelapse,slowmo</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=photos</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/61/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/60/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/59/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/58/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/62/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/10/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/3/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/9/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/2/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/23/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/5/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/1/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/31/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/28/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/?category=time_lapses</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/6/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/7/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/11/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/12/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/21/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/22/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/4/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/38/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/29/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/26/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/40/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/16/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/24/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/27/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/34/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/35/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/37/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/41/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/52/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/54/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/30/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/14/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/33/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/42/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/17/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/15/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/39/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/44/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/50/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/51/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/8/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/55/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/25/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/32/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/13/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/43/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/36/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/45/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/48/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/18/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/56/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/53/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/49/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/57/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/19/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/46/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/47/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ader-films.herokuapp.com/items/20/</loc>
+  <lastmod>2023-01-05T23:36:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
