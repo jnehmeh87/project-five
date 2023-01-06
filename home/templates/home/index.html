@@ -12,32 +12,32 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
+    <div class="container">
+        <div class="row">
             <video src="https://ader-films.s3.amazonaws.com/media/home-bckg.mp4" muted autoplay loop id="myVideo"></video>
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-white">
-                    Who Are We?
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'items' %}" class="shop-now-button btn  btn-lg rounded-0 text-uppercase py-3 text-white">Shop Now</a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container h-100" id="aboutUs">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto" >
-                <h1 class="display-4 logo-font text-white">
+            <div class="col-12 col-md-8 my-auto" style="background-color: rgba(0, 0, 0, 0.25);">
+                <h1 class="display-4 logo-font text-white my-5">
                     ADER FILMS
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, maxime voluptatem magnam maiores totam iure molestias
-                    nihil impedit, error minima voluptates delectus incidunt explicabo voluptate dolores quis doloribus placeat! Dolores.</p>
-                <div class="my-5">
+                <p class="logo-font text-white">
+                    Found in 2019, Ader Films is a production house with a leading high quality picture aiming to grow in the coming years.
+                    The founder of Ader films, Jad Nehmeh of 35 years old, have experience since 2007 and worked with Short films,
+                    Documentaries, Music vide clips and Advertising, as well as several other types of film production. 
+                </p>
+                <br>
+                <p class="logo-font text-white">
+                    During the pandemic, Ader Films focused on transforming their footage into video stock. You can find videos and pictures
+                    of high quality for you your personal or business use. We offer a variety of Aerial videography, slow motion video, 
+                    timelapse video all in 4k video.
+                </p>
+                <br>
+                <br>
+                <h2 class="display-12 logo-font text-white">
+                    Check our Stock Footage
+                </h2>
+                <div class="my-3">
                     <h4>
-                        <a href="" class="to-gallery-button btn  btn-lg rounded-0 text-uppercase py-3 text-white">About Us</a>
+                        <a href="{% url 'items' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 text-white">Shop Now</a>
                     </h4>
                 </div>
             </div>
@@ -45,11 +45,31 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 my-auto">
-                <iframe width="360" height="215" src="https://www.youtube.com/embed/TbKMOsnkXkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="360" height="215" src="https://www.youtube.com/embed/vL87TeJMruM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="360" height="215" src="https://www.youtube.com/embed/kextcFo5D54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="360" height="215" src="https://www.youtube.com/embed/vL87TeJMruM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-12 col-md-8 my-auto" style="background-color: rgba(0, 0, 0, 0.25);">
+                <br>
+                <br>
+                <h2 class="display-12 logo-font text-white">
+                    Check some of our work!
+                </h2>
+                <br>
+                <iframe class="col-sm-12 col-md-6 col-lg-3 col-xl-3" src="https://www.youtube.com/embed/TbKMOsnkXkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-3 col-xl-3" src="https://www.youtube.com/embed/Rn7Vyxyqb-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-3 col-xl-3" src="https://www.youtube.com/embed/p8lvgUz7aGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-3 col-xl-3" src="https://www.youtube.com/embed/CUHpRcD8DnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/3iB4x9i7PBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/0s3NJm7sk8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/SuKZfm8N96s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/gwAzQvnxVZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/Ke7YqCKna6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/vL87TeJMruM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/A1lmt6HJg5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/-1wfw4dl9hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/KsYREci6qSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/r0uDt8OK5tQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/-8VcFaFPCl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/DOIuCFvbg9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/zB4QcGjIAOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="col-sm-12 col-md-6 col-lg-5 col-xl-3" src="https://www.youtube.com/embed/O4YEotJKLm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </div>
