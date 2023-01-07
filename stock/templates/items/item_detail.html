@@ -27,7 +27,7 @@
                         <div class="image-container my-5">
                             {% if item.video %}
                             <a href="{{ item.video.url }}" target="_blank">
-                                <video class="card-img-top img-fluid" src="{{ item.video.url }}" alt="{{ item.name }}" autoplay loop muted></video>
+                                <video class="card-img-top img-fluid" src="{{ item.video.url }}" autoplay loop muted></video>
                             </a>
                             {% elif item.image %}
                             <a href="{{ item.image.url }}" target="_blank">
