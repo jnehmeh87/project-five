@@ -3,7 +3,6 @@ from django.shortcuts import (
 from django.contrib import messages
 
 from stock.models import Item
-# Create your views here.
 
 
 def view_bag(request):
