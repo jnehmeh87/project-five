@@ -9,8 +9,10 @@ class ItemForm(forms.ModelForm):
         model = Item
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableImageInput)
-    video = forms.FileField(label='Video', required=False, widget=CustomClearableVideoInput)
+    image = forms.ImageField(
+        label='Image', required=False, widget=CustomClearableImageInput)
+    video = forms.FileField(
+        label='Video', required=False, widget=CustomClearableVideoInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

@@ -1,4 +1,4 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse" id="all-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
@@ -19,13 +19,13 @@
         </li>
     </ul>
 </div>
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse" id="video-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="video-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Videos
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="items-link">
+            <div class="dropdown-menu border-0" aria-labelledby="video-items-link">
                 <a href="{% url 'items' %}?category=videos" class="dropdown-item">Normal speed</a>
                 <a href="{% url 'items' %}?category=aerial" class="dropdown-item">Aerial</a>
                 <a href="{% url 'items' %}?category=timelapse" class="dropdown-item">Timelapse</a>
@@ -35,13 +35,13 @@
         </li>
     </ul>
 </div>
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse" id="photo-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="photo-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Photos
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="photo-items-link">
                 <a href="{% url 'items' %}?category=photos" class="dropdown-item">All Photos</a>
                 <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
             </div>

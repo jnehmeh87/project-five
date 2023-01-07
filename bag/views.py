@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404)
 from django.contrib import messages
 
 from stock.models import Item
@@ -24,8 +25,8 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
-    
-    
+
+
 def remove_from_bag(request, item_id):
     """ Remove the item from the shopping bag """
     try:

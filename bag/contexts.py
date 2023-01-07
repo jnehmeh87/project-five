@@ -2,8 +2,8 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from stock.models import Item
 
-def bag_contents(request):
 
+def bag_contents(request):
     bag_items = []
     total = 0
     item_count = 0
@@ -29,4 +29,3 @@ def bag_contents(request):
     }
 
     return context
-    

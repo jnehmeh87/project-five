@@ -39,10 +39,12 @@ def all_items(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse('items'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=(
+                query))
             items = items.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -75,7 +77,7 @@ def add_item(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     if request.method == 'POST':
         form = ItemForm(request.POST, request.FILES)
         if form.is_valid():
@@ -83,7 +85,8 @@ def add_item(request):
             messages.success(request, 'Successfully added Item!')
             return redirect(reverse('item_detail', args=[item.id]))
         else:
-            messages.error(request, 'Failed to add item. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add item. Ensure the form is valid.')
     else:
         form = ItemForm()
     template = 'items/add_item.html'
@@ -100,7 +103,7 @@ def edit_item(request, item_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     item = get_object_or_404(Item, pk=item_id)
     if request.method == 'POST':
         form = ItemForm(request.POST, request.FILES, instance=item)
@@ -109,7 +112,8 @@ def edit_item(request, item_id):
             messages.success(request, 'Successfully updated item!')
             return redirect(reverse('item_detail', args=[item.id]))
         else:
-            messages.error(request, 'Failed to update item. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update item. Ensure the form is valid.')
     else:
         form = ItemForm(instance=item)
         messages.info(request, f'You are editing {item.name}')
@@ -129,7 +133,7 @@ def delete_item(request, item_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     item = get_object_or_404(Item, pk=item_id)
     item.delete()
     messages.success(request, 'Item deleted!')
