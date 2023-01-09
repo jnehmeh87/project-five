@@ -47,7 +47,7 @@
                                         {% include "bag/item-info.html" %}
                                     </td>
                                     <td class="py-3">
-                                        {% include "bag/remove-form.html" %}
+                                        <a href="" class="remove-item text-danger" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3 w-25">
                                         <p class="my-0 float-right">${{ item.item.price | calc_subtotal:item.quantity }}</p>
