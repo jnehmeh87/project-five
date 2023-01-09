@@ -81,7 +81,7 @@ def item_detail(request, item_id):
             messages.error(
                 request, 'Failed to add item. Ensure the form is valid.')
     else:
-        form = ItemForm()
+        comment_form = CommentForm()
 
     context = {
         'item': item,
