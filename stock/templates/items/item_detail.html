@@ -86,8 +86,6 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
         <hr>
         <div class="row">
             <div class="col-md-8 card mb-4  mt-1 ">
@@ -113,9 +111,13 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="col-md-4 card mb-4  mt-1 ">
+        <div class="col-md-4 card mb-4  mt-1">
             <div class="card-body">
                 {% if commented %}
+                <div>
+                    Login or Sign up to be able to leave a comment!
+                </div>
+                {% else %}
                 {% if user.is_authenticated %}
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
