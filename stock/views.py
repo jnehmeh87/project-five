@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Item, Category
-from .forms import ItemForm
+from .models import Item, Category, Comment
+from .forms import ItemForm, CommentForm
 
 
 def all_items(request):
@@ -60,12 +60,34 @@ def all_items(request):
 
 
 def item_detail(request, item_id):
-    """ A view to show individual items details """
+    """ A view to show individual items details and comments """
 
     item = get_object_or_404(Item, pk=item_id)
+    comments = item.comments.filter(
+        approved=True).order_by('-created_on')
+
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.item = item
+            comment.save()
+
+            messages.success(request, 'Successfully added Item!')
+            return redirect(reverse('item_detail', args=[item.id]))
+        else:
+            messages.error(
+                request, 'Failed to add item. Ensure the form is valid.')
+    else:
+        form = ItemForm()
 
     context = {
         'item': item,
+        'comments': comments,
+        "commented": True,
+        "comment_form": CommentForm()
     }
 
     return render(request, 'items/item_detail.html', context)
