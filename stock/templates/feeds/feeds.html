@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Your Story</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-8 card mb-4 mt-1 border-0">
+                <h3>Feed:</h3>
+                <hr>
+                <div class="card-body">
+                    {% for feed in feeds %}
+                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
+                    <div class="comments" style="padding: 10px;">
+                        <p class="font-weight-bold">
+                            <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                            {{ feed.name }}
+                            <span class=" text-muted font-weight-normal">
+                                <!-- The comment's created date goes here -->
+                                {{ feed.created_on }}
+                            </span> wrote:
+                        </p>
+                        <div class="col-1">
+                            <strong>
+                                {% if user.is_authenticated %}
+                                <form class="d-inline" action="{% url 'feed_like' recipe.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
+    
+                                    <button type="submit" name="feedpost_id" value="{{feed.id}}" class="btn-like"><i
+                                            class="fas fa-heart"></i></button>
+    
+                                    {% else %}
+    
+                                    <button type="submit" name="feedpost_id" value="{{feed.id}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
+    
+                                    {% endif %}
+    
+                                </form>
+                                {% else %}
+    
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
+    
+                                <span class="text-secondary"> {{ feed.number_of_likes }} </span>
+                            </strong>
+                            
+                        </div>
+                        <!-- The body of the comment goes before the | -->
+                        <p>
+                            {{ feed.body | linebreaks }}
+                        </p>
+                </div>
+                {% endfor %}
+                <!-- Our for loop ends here -->
+            </div>
+        </div>
+        <div class="col-md-4 card mb-4  mt-1">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3>Leave a post:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1em;">
+                    {{ feed_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-lg" style="margin: 5px; margin-left: 0;">Submit</button>
+                </form>
+                {% else %}
+                <div class="alert" role="alert">
+                    <h3>You need to login or register to be able to leave a post</h3>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

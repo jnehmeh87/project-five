@@ -1,12 +1,18 @@
 from django import forms
 from .widgets import CustomClearableImageInput, CustomClearableVideoInput
-from .models import Item, Category, Comment
+from .models import Item, Category, Comment, Feed
 
 
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
+
+class FeedForm(forms.ModelForm):
+    class Meta:
+        model = Feed
+        fields = ('title', 'body',)
 
 
 class ItemForm(forms.ModelForm):

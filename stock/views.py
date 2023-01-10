@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Item, Category, Comment
-from .forms import ItemForm, CommentForm
+from .models import Item, Category, Comment, Feed
+from .forms import ItemForm, CommentForm, FeedForm
 
 
 def all_items(request):
@@ -160,3 +160,41 @@ def delete_item(request, item_id):
     item.delete()
     messages.success(request, 'Item deleted!')
     return redirect(reverse('items'))
+
+
+def feed_view(self, request, *args, **kwargs):
+    """ A view to show individual items details and comments """
+
+    title = get_object_or_404(Feed, id=self)
+    feeds = title.comments.filter(
+        approved=True).order_by('-created_on')
+    liked = False
+    if title.likes.filter(id=self.request.user.id).exists():
+        liked = True
+
+    if request.method == 'POST':
+        feed_form = FeedForm(data=request.POST)
+        if feed_form.is_valid():
+            feed_form.instance.email = request.user.email
+            feed_form.instance.name = request.user.username
+            post = feed_form.save(commit=False)
+            post.title = title
+            post.save()
+
+            messages.success(request, 'Successfully added Post!')
+            return redirect(reverse('feeds', args=[title.id]))
+        else:
+            messages.error(
+                request, 'Failed to add post. Ensure the form is valid.')
+    else:
+        feed_form = CommentForm()
+
+    context = {
+        'title': title,
+        'feeds': feeds,
+        "posted": False,
+        'liked': liked,
+        "feed_form": FeedForm(),
+    }
+
+    return render(request, 'feeds/feeds.html', context)

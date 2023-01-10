@@ -121,10 +121,13 @@ The user can chech the website for new video stock footage or pictures and buy t
 ![Email registration confirmation](assets/images/email-register.png)
 ![Email pruchase confirmation](assets/images/email-purchase.png)
 
+* I used google search tab to find the most suitable SEO for my website, as I added them to the main html header.
+
 ## Future features:
 - After purchase, a client will be redirected to a page to download High quality videos. 
 - Calendar to book a meeting for film production purpose for other businesses.
 - Adding a personalized page for people who works with ader films, featuring their work as well.
+- Share your story experience
 
 
 ## Testing
@@ -134,14 +137,16 @@ I have manually tested this project by doing the following:
 
 
 ## Bugs
+### Remained Bugs
+- Following the walk through project, and after refactoring the bag, I need to click now 2 times on remove to remove the item, although I removed the double form on the same page.
+- Same issue occurs with the navbar on lg screens, you need to click twice to have the drop down nav to show.
+- I didn't have time to finishe the 3rd customed model and that I was creating a feed where users can share their work experiences. Some problems occured and I panicked because of time. I just haven't realized I need three custom models until the last minute. and that put me now in trouble. I wish I can have a chance, just to fix that
+
 ### Solved Bugs
 - Stripe wasn't functioning well as in the videos and that was affecting the email process. Tutors helped me surpass this and it appears that by using an older version of stripe, I wasn't actually needing the new code provided by Code institute. So when I set it back to the code use in the project, everything worked perfectly.
 
 
 ## Validator Testing
-- The validator shows an error caused by crispy forms, The crispy form is causing an error on the recipe_details pages that I can't fix:
-* Here is an example [https://validator.w3.org/nu/?doc=https://foodupmood.herokuapp.com/easy-candy-apples/]
-
 - Those pages are validate and have no more issues
 * Index.html [https://validator.w3.org/nu/?doc=https://ader-films.herokuapp.com/]
 * signup.html [https://validator.w3.org/nu/?doc=https://ader-films.herokuapp.com/accounts/signup/]
@@ -149,6 +154,9 @@ I have manually tested this project by doing the following:
 
 - PEP8
     - No errors were returned from PEP8online.com
+
+- JSHint
+    - it shows indentation errors but for files implemented for stripe and profiles. nothing I wrote.
 
 ## Deployment
 
