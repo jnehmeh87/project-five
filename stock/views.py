@@ -75,19 +75,19 @@ def item_detail(request, item_id):
             comment.item = item
             comment.save()
 
-            messages.success(request, 'Successfully added Item!')
+            messages.success(request, 'Successfully added Comment!')
             return redirect(reverse('item_detail', args=[item.id]))
         else:
             messages.error(
-                request, 'Failed to add item. Ensure the form is valid.')
+                request, 'Failed to add comment. Ensure the form is valid.')
     else:
         comment_form = CommentForm()
 
     context = {
         'item': item,
         'comments': comments,
-        "commented": True,
-        "comment_form": CommentForm()
+        "commented": False,
+        "comment_form": CommentForm(),
     }
 
     return render(request, 'items/item_detail.html', context)

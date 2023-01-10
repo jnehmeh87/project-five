@@ -88,11 +88,11 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-8 card mb-4  mt-1 ">
+            <div class="col-md-8 card mb-4  mt-1">
                 <h3>Comments:</h3>
                 <div class="card-body">
-                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                     {% for comment in comments %}
+                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                     <div class="comments" style="padding: 10px;">
                         <p class="font-weight-bold">
                             <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
@@ -107,17 +107,12 @@
                             {{ comment.body | linebreaks }}
                         </p>
                 </div>
-                <!-- Our for loop ends here -->
                 {% endfor %}
+                <!-- Our for loop ends here -->
             </div>
         </div>
         <div class="col-md-4 card mb-4  mt-1">
             <div class="card-body">
-                {% if commented %}
-                <div>
-                    Login or Sign up to be able to leave a comment!
-                </div>
-                {% else %}
                 {% if user.is_authenticated %}
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
@@ -126,7 +121,10 @@
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup btn-lg" style="margin: 5px; margin-left: 0;">Submit</button>
                 </form>
-                {% endif %}
+                {% else %}
+                <div class="alert" role="alert">
+                    <h3>You need to login or register to be able to leave a comment</h3>
+                </div>
                 {% endif %}
             </div>
         </div>
