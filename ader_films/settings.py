@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'localhost', '8000-jnehmeh87-projectfive-kgkfiogcs08.ws-eu98.gitpod.io']
 
 # Application definition
 
@@ -62,7 +62,6 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'ader_films.urls'
