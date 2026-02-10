@@ -1,1 +1,42 @@
-[{"pk":1,"model":"stock.category","fields":{"name":"videos","friendly_name":"Videos"}},{"pk":2,"model":"stock.category","fields":{"name":"aerial","friendly_name":"Aerial"}},{"pk":3,"model":"stock.category","fields":{"name":"time_lapses","friendly_name":"Timelapse"}},{"pk":4,"model":"stock.category","fields":{"name":"slowmo","friendly_name":"Slow-mo"}},{"pk":5,"model":"stock.category","fields":{"name":"photos","friendly_name":"Photos"}}]
+[
+  {
+    "pk": 1,
+    "model": "stock.category",
+    "fields": {
+      "name": "cinema_4k",
+      "friendly_name": "Cinema 4K"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "stock.category",
+    "fields": {
+      "name": "aerial",
+      "friendly_name": "Aerial"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "stock.category",
+    "fields": {
+      "name": "timelapse",
+      "friendly_name": "Timelapse"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "stock.category",
+    "fields": {
+      "name": "mobile_action",
+      "friendly_name": "Mobile & Action"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "stock.category",
+    "fields": {
+      "name": "photography",
+      "friendly_name": "Photography"
+    }
+  }
+]
