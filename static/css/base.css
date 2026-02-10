@@ -328,6 +328,18 @@ input[name='q']::placeholder {
     }
 }
 
+/* Fix for navbar double-click issue and enable hover on desktop */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        margin-top: 0; /* Removes the gap so the menu doesn't close when moving the mouse */
+    }
+}
+
+
 /* Mailchimp */
 #mc_embed_signup form {
     padding: 0;
