@@ -35,7 +35,7 @@
     "pk": 5,
     "model": "stock.category",
     "fields": {
-      "name": "photography",
+      "name": "photos",
       "friendly_name": "Photography"
     }
   }
