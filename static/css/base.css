@@ -344,3 +344,16 @@ input[name='q']::placeholder {
 #mc_embed_signup form {
     padding: 0;
 }
+
+/* Unified look for item list thumbnails */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Override for detail page to show full image */
+.detail-img {
+    height: auto;
+    object-fit: contain;
+}
