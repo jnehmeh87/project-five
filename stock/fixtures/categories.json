@@ -3,8 +3,8 @@
     "pk": 1,
     "model": "stock.category",
     "fields": {
-      "name": "cinema_4k",
-      "friendly_name": "Cinema 4K"
+      "name": "normal_speed",
+      "friendly_name": "Normal Speed"
     }
   },
   {
@@ -27,8 +27,8 @@
     "pk": 4,
     "model": "stock.category",
     "fields": {
-      "name": "mobile_action",
-      "friendly_name": "Mobile & Action"
+      "name": "slow_motion",
+      "friendly_name": "Slow Motion"
     }
   },
   {
