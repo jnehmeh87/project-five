@@ -34,6 +34,8 @@ ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'ader-films-2b6eeafecec9.herokuapp.
 if 'HEROKU_HOSTNAME' in os.environ:
     ALLOWED_HOSTS.append(os.environ.get('HEROKU_HOSTNAME'))
 
+SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
+
 # Application definition
 
 INSTALLED_APPS = [
