@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'localhost', '8000-jnehmeh87-projectfive-kgkfiogcs08.ws-eu98.gitpod.io']
+ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'ader-films-2b6eeafecec9.herokuapp.com', 'localhost', '8000-jnehmeh87-projectfive-kgkfiogcs08.ws-eu98.gitpod.io']
 
 if 'HEROKU_HOSTNAME' in os.environ:
     ALLOWED_HOSTS.append(os.environ.get('HEROKU_HOSTNAME'))
