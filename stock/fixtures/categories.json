@@ -3,7 +3,7 @@
     "pk": 1,
     "model": "stock.category",
     "fields": {
-      "name": "normal_speed",
+      "name": "videos",
       "friendly_name": "Normal Speed"
     }
   },
@@ -19,7 +19,7 @@
     "pk": 3,
     "model": "stock.category",
     "fields": {
-      "name": "timelapse",
+      "name": "time_lapses",
       "friendly_name": "Timelapse"
     }
   },
@@ -27,7 +27,7 @@
     "pk": 4,
     "model": "stock.category",
     "fields": {
-      "name": "slow_motion",
+      "name": "slowmo",
       "friendly_name": "Slow Motion"
     }
   },
