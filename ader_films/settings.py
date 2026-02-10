@@ -31,6 +31,9 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['ader-films.herokuapp.com', 'localhost', '8000-jnehmeh87-projectfive-kgkfiogcs08.ws-eu98.gitpod.io']
 
+if 'HEROKU_HOSTNAME' in os.environ:
+    ALLOWED_HOSTS.append(os.environ.get('HEROKU_HOSTNAME'))
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -205,7 +208,7 @@ if 'USE_AWS' in os.environ:
     }
 
     # Bucket config
-    AWS_STORAGE_BUCKET_NAME = 'ader-films'
+    AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', 'ader-films')
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
