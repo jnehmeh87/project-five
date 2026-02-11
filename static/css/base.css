@@ -6,7 +6,7 @@ body {
     background: #222;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #fff;
     font-family: 'Lato';
 }
 
@@ -16,7 +16,7 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 50%;
+    z-index: -2;
   }
 
 /* from Bulma */
@@ -37,9 +37,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: transparent;
+    border: 2px solid #fff;
     color: white;
     min-width: 260px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-black {
@@ -66,8 +70,9 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: white;
+    color: black;
+    text-decoration: none;
 }
 
 .text-black {
@@ -88,13 +93,20 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+.glass-panel {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btt-button {
