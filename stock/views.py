@@ -73,6 +73,11 @@ def item_detail(request, item_id):
             comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.item = item
+
+            rating = request.POST.get('rating')
+            if rating:
+                comment.rating = int(rating)
+
             comment.save()
 
             messages.success(request, 'Successfully added Comment!')

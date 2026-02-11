@@ -30,6 +30,7 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'body',
+        'rating',
     )
 
 
