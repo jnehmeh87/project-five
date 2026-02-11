@@ -66,27 +66,167 @@
             <h2 class="text-center mb-5 text-uppercase letter-spacing-2 text-white">Featured Work</h2>
             <div class="row">
                 <!-- Video Grid -->
-                {% for video_id in "TbKMOsnkXkA,p8lvgUz7aGI,Rn7Vyxyqb-I,CUHpRcD8DnM,3iB4x9i7PBk,0s3NJm7sk8E,SuKZfm8N96s,gwAzQvnxVZw,Ke7YqCKna6o,vL87TeJMruM,A1lmt6HJg5w,-1wfw4dl9hM,KsYREci6qSk,r0uDt8OK5tQ,-8VcFaFPCl8,DOIuCFvbg9c,zB4QcGjIAOU,O4YEotJKLm0"|make_list %}
-                    {% if video_id|length > 1 %} <!-- Simple check to avoid empty strings from split -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/{{ video_id }}" 
-                                    title="YouTube video player" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    allowfullscreen>
-                            </iframe>
-                        </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/TbKMOsnkXkA" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
                     </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            
-            <!-- Fallback for manual list if make_list filter behaves unexpectedly in this context -->
-            <!-- (The loop above is a cleaner way to render the grid, but requires the string to be split correctly. 
-                 If Django template parsing issues occur, revert to manual divs) -->
-        </div>
-    </div>
-{% endblock %}
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/p8lvgUz7aGI" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Rn7Vyxyqb-I" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/CUHpRcD8DnM" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/3iB4x9i7PBk" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/0s3NJm7sk8E" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/SuKZfm8N96s" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/gwAzQvnxVZw" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Ke7YqCKna6o" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/vL87TeJMruM" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/A1lmt6HJg5w" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/-1wfw4dl9hM" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/KsYREci6qSk" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/r0uDt8OK5tQ" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/-8VcFaFPCl8" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/DOIuCFvbg9c" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/zB4QcGjIAOU" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/O4YEotJKLm0" 
+                                title="YouTube video player" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
