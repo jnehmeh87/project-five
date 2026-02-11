@@ -18,10 +18,11 @@ body {
 
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -2;
   }
 
@@ -467,4 +468,19 @@ footer a {
 .rating label:hover ~ label,
 .rating input:checked ~ label {
     color: #ffc107;
+}
+
+/* Mobile Home Page Fixes */
+@media (max-width: 768px) {
+    .hero-section h1.display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p.lead {
+        font-size: 1.1rem;
+    }
+    
+    .content-section {
+        padding: 3rem 0;
+    }
 }
