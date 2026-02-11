@@ -115,7 +115,7 @@ a.category-badge > span.badge:hover {
 }
 
 .hero-section {
-    min-height: 80vh;
+    min-height: calc(100vh - 164px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,6 +168,7 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 1000;
 }
 
 .btt-link,
@@ -480,7 +481,7 @@ footer a {
 /* Mobile Home Page Fixes */
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 60vh;
+        min-height: calc(100vh - 116px);
     }
 
     .hero-section h1.display-3 {
