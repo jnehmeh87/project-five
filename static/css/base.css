@@ -113,7 +113,6 @@ a.category-badge > span.badge:hover {
 }
 
 .content-section {
-    background: rgba(0, 0, 0, 0.85);
     padding: 5rem 0;
 }
 
@@ -404,4 +403,9 @@ input[name='q']::placeholder {
 .detail-img {
     height: auto;
     object-fit: contain;
+}
+
+/* Footer adjustments */
+footer {
+    padding: 20px 0 !important;
 }
