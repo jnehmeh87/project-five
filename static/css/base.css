@@ -3,12 +3,17 @@ html {
 }
 
 body {
-    background: #222;
+    background: #fff;
     background-size: cover;
     min-height: calc(100vh - 164px);
     height: auto;
-    color: #fff;
+    color: #000;
     font-family: 'Lato';
+}
+
+.homepage-body {
+    background: #222;
+    color: #fff;
 }
 
 #myVideo {
@@ -96,6 +101,11 @@ body {
     position: fixed;
     background: rgba(0, 0, 0, 0.6);
     z-index: -1;
+    display: none;
+}
+
+.homepage-body .overlay {
+    display: block;
 }
 
 a.category-badge > span.badge:hover {
@@ -405,7 +415,10 @@ input[name='q']::placeholder {
     object-fit: contain;
 }
 
-/* Footer adjustments */
 footer {
-    padding: 20px 0 !important;
+    background-color: #222;
+}
+
+.homepage-body footer {
+    background-color: transparent;
 }
