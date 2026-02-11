@@ -176,6 +176,16 @@ footer {
     cursor: pointer;
 }
 
+.btt-link {
+    color: #000;
+}
+
+.homepage-body .btt-link,
+.homepage-body .btt-button {
+    color: #fff;
+    border-color: #fff !important;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
