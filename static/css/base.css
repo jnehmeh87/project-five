@@ -415,10 +415,6 @@ input[name='q']::placeholder {
     object-fit: contain;
 }
 
-footer {
-    background-color: #222;
-}
-
-.homepage-body footer {
-    background-color: transparent;
+footer a {
+    color: inherit;
 }
