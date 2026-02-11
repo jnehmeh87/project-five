@@ -55,6 +55,15 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
+@receiver(post_save, sender=Comment)
+@receiver(post_delete, sender=Comment)
+def update_item_rating(sender, instance, **kwargs):
+    item = instance.item
+    average = item.comments.filter(rating__gt=0, approved=True).aggregate(Avg('rating'))['rating__avg']
+    item.rating = round(average, 2) if average else 0
+    item.save()
+
+
 class Feed(models.Model):
     title = models.CharField(max_length=254)
     name = models.ForeignKey(
